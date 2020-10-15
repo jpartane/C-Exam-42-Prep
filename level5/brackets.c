@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   brakets.c                                          :+:      :+:    :+:   */
+/*   brackets.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpartane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/15 18:08:09 by jpartane          #+#    #+#             */
-/*   Updated: 2020/10/15 18:12:55 by jpartane         ###   ########.fr       */
+/*   Created: 2020/10/06 10:23:15 by jpartane          #+#    #+#             */
+/*   Updated: 2020/10/06 13:30:28 by jpartane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int		ft_strlen(char *str)
 
 int		brackets(char *str)
 {
-		int i = 0;
-		int store[ft_strlen(str)];
+		int 	i = 0;
+		int		store[ft_strlen(str)];
 
 		while (*str)
 		{
@@ -46,6 +46,7 @@ int		brackets(char *str)
 int		main(int ac, char **av)
 {
 		int i = 1;
+
 		if (ac < 2)
 		{
 			write(1, "\n", 1);
@@ -60,4 +61,4 @@ int		main(int ac, char **av)
 			i++;
 		}
 		return (0);
-}
+}			
